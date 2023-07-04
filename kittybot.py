@@ -67,7 +67,7 @@ def main():
     updater.dispatcher.add_handler(CommandHandler('start', wake_up))
     updater.dispatcher.add_handler(CommandHandler('newcat', new_cat))
     updater.dispatcher.add_handler(MessageHandler(Filters.text('To Be'), say_hi))
-    #filters.Regex('To Be')
+
     updater.start_polling()
     updater.idle()
 
